@@ -1,0 +1,187 @@
+/* header*/
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+    background: #333; 
+    color: #fff; 
+  }
+
+header nav ul { 
+    display: flex;
+    list-style: none;
+    margin:0;
+    padding: 0;}
+
+header nav ul li {
+    margin-left: 20px; 
+      }
+
+header nav ul li a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 30px;
+    margin: 10px; }
+
+header nav ul li a.hem { background-color: #5c5b5b;}
+header nav ul li a.pris { background-color: #5c5b5b;}
+header nav ul li a.boka-tider { background-color: #5c5b5b;}
+header nav ul li a.kontakta-oss { background-color: #5c5b5b;}
+header nav ul li a.om-oss { background-color: #5c5b5b;}
+      
+h1.logo {font-size: 50px;
+         font-weight: bold;}
+
+
+nav ul li a:hover {
+        background-color: #555;
+      }
+
+/* body*/
+.background-section {
+        position: relative;
+        
+        background-image: url("image1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 100px 20px;
+        text-align: left;
+        height: 600px;
+      }
+
+
+.background-section h1 { font-size:xx-large;}
+
+.background-section p {
+  width: 700px;
+  font-size: xx-large;}
+
+p.source {
+  font-size: xx-small;
+  justify-content: flex-end
+}
+
+/* body priser*/
+.priser {
+  position: relative;
+  background-image: url("image2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: left;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.priser div {
+  flex: 1 1 calc(25% - 16px);
+  
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.priser div ul li { font-size: larger;}
+
+@media (max-width: 768px) {
+  .priser div {
+      flex: 1 1 100%;
+  }
+}
+
+/*body boka tider*/
+.boka {position: relative;  
+  background-image: url("image4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  text-align: left;
+  height: 600px;
+  }
+.boka fieldset { width: 500px;
+                 background-color: #333;
+                opacity: 0.85;}
+.boka input{
+  width: 350px;}
+
+.boka textarea{
+  width: 350px;}
+
+
+/*om oss*/
+.about-us {position: relative;  
+  background-image: url("image5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  text-align: left;
+  height: 800px;
+  color: #fff;
+  }
+
+.about-us p{ font-size: large;
+           width: 750px;}
+.about-us ul { font-size: large;
+             width:750px ;}
+.about-us h3 {font-size: xx-large;}
+
+
+/*body kontakta oss*/
+.kontakta {position: relative;  
+    background-image: url("image3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    text-align: left;
+    height: 600px;
+    }
+
+.kontakta fieldset {
+    width: 400px;}
+
+fieldset{ color: #fff;
+         font-size: xx-large;}
+
+legend {font-style: italic;}
+
+.kontakta fieldset label {
+  color: #fff;}
+
+.kontakta input{
+  width: 350px;}
+
+.kontakta textarea{
+  width: 350px;}
+
+
+
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+ul.social-links { 
+  display: flex;
+  list-style: none;
+  margin:0;
+  padding: 0;
+  font-size: xx-large;}
+
+  ul.social-links li {
+    margin-left: 20px; 
+      }
+
+   
