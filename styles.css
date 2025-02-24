@@ -67,6 +67,7 @@ nav ul li a:hover {
   }
 }
 
+
 /* body */
 .background-section {
   position: relative;
@@ -156,7 +157,7 @@ nav ul li a:hover {
 }
 
 .boka fieldset { 
-  width: 500px;
+  width: 400px;
   background-color: #333;
   opacity: 0.85;
 }
@@ -181,26 +182,31 @@ nav ul li a:hover {
   }
 }
 
+
+
 /* om oss */
-.about-us {
-  position: relative;  
-  background-image: url("image5.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 100px 20px;
-  text-align: left;
-  height: 800px;
-  color: #fff;
+video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
 }
 
+
 .about-us p { 
-  font-size: large;
+  font-size: x-large;
   width: 750px;
 }
 
 .about-us ul { 
-  font-size: large;
+  font-size: x-large;
   width: 750px;
 }
 
@@ -219,6 +225,8 @@ nav ul li a:hover {
       width: 100%; /* Gör texten fullbredd på små skärmar */
   }
 }
+
+
 
 /* body kontakta oss */
 .kontakta {
@@ -301,3 +309,9 @@ ul.social-links li {
       font-size: large; /* Minskar teckenstorleken för sociala länkar */
   }
 }
+
+
+
+
+
+
