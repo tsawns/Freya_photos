@@ -1,0 +1,325 @@
+/* header */
+header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px; 
+  background: #333; 
+  color: #fff; 
+}
+
+header nav ul { 
+  display: flex;
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-left: 20px; 
+}
+
+header nav ul li a {
+  color: #fff; 
+  text-decoration: none; 
+  font-size: 30px;
+  margin: 10px; 
+}
+
+header nav ul li a.hem { background-color: #5c5b5b;}
+header nav ul li a.pris { background-color: #5c5b5b;}
+header nav ul li a.boka-tider { background-color: #5c5b5b;}
+header nav ul li a.kontakta-oss { background-color: #5c5b5b;}
+header nav ul li a.om-oss { background-color: #5c5b5b;}
+    
+h1.logo {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Media query för mobila enheter (skärmar mindre än 768px breda) */
+@media only screen and (max-width: 767px) {
+  header {
+      flex-direction: column; /* Ändrar layouten till kolumn för bättre anpassning på små skärmar */
+      padding: 10px; /* Minskar padding för att spara utrymme */
+  }
+
+  header nav ul {
+      flex-direction: column; /* Lägger länkarna under varandra */
+      align-items: center; /* Centrerar länkarna */
+  }
+
+  header nav ul li {
+      margin-left: 0; /* Tar bort marginalen mellan länkarna */
+      margin-bottom: 10px; /* Lägger till marginal under varje länk */
+  }
+
+  header nav ul li a {
+      font-size: 20px; /* Minskar teckenstorleken för länkar på mobiler */
+  }
+
+  h1.logo {
+      font-size: 30px; /* Minskar loggans teckenstorlek för mobiler */
+  }
+}
+
+
+/* body */
+.background-section {
+  position: relative;
+  background-image: url("image1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  text-align: left;
+  height: 600px;
+  color: white;
+}
+
+.background-section h1 { 
+  font-size: xx-large;
+}
+
+.background-section p {
+  width: 700px;
+  font-size: xx-large;
+}
+
+
+
+/* Media query för mobila enheter */
+@media only screen and (max-width: 767px) {
+  .background-section {
+      padding: 50px 10px; /* Minskar padding för att spara utrymme */
+      height: auto; /* Gör höjden automatisk för att passa innehållet */
+  }
+
+  .background-section p {
+      width: 100%; /* Gör texten fullbredd på små skärmar */
+      font-size: large; /* Minskar teckenstorleken för bättre läsbarhet */
+  }
+}
+
+/* body priser */
+.priser {
+  position: relative;
+  background-image: url("image2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: left;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  color: #fff;
+}
+
+.priser div {
+  flex: 1 1 calc(25% - 16px);
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.priser div ul li { 
+  font-size: larger;
+}
+
+@media (max-width: 768px) {
+  .priser div {
+      flex: 1 1 100%; /* Gör varje sektion fullbredd på små skärmar */
+  }
+}
+
+/* Media query för mobila enheter */
+@media only screen and (max-width: 767px) {
+  .priser {
+      height: auto; /* Gör höjden automatisk för att passa innehållet */
+  }
+}
+
+/* body boka tider */
+.boka {
+  position: relative;  
+  background-image: url("image4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  text-align: left;
+  height: 600px;
+}
+
+.boka fieldset { 
+  width: 400px;
+  background-color: #333;
+  opacity: 0.85;
+}
+
+.boka input {
+  width: 350px;
+}
+
+.boka textarea {
+  width: 350px;
+}
+
+/* Media query för mobila enheter */
+@media only screen and (max-width: 767px) {
+  .boka fieldset {
+      width: 100%; /* Gör formuläret fullbredd på små skärmar */
+  }
+
+  .boka input,
+  .boka textarea {
+      width: 100%; /* Gör input och textarea fullbredd */
+  }
+}
+
+/* om oss */
+video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+}
+
+.film {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-us {
+  position: relative;
+  background-image: url("image5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  text-align: left;
+  color: #fff;
+}
+
+.about-us p, .about-us ul {
+  font-size: large;
+  max-width: 750px;
+  width: 100%;
+}
+
+.about-us h3 {
+  font-size: xx-large;
+}
+
+/* Media query för mobila enheter */
+@media only screen and (max-width: 767px) {
+  .about-us {
+      height: auto; /* Gör höjden automatisk för att passa innehållet */
+      padding: 50px 15px;
+  }
+
+  .about-us p,
+  .about-us ul {
+      width: 100%; /* Gör texten fullbredd på små skärmar */
+  }
+
+  .film {
+      width: 100%;
+  }
+}
+
+/* body kontakta oss */
+.kontakta {
+  position: relative;  
+  background-image: url("image3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  text-align: left;
+  height: 600px;
+}
+
+.kontakta fieldset {
+  width: 400px;
+}
+
+fieldset { 
+  color: #fff;
+  font-size: xx-large;
+}
+
+legend {
+  font-style: italic;
+}
+
+.kontakta fieldset label {
+  color: #fff;
+}
+
+.kontakta input {
+  width: 350px;
+}
+
+.kontakta textarea {
+  width: 350px;
+}
+
+/* Media query för mobila enheter */
+@media only screen and (max-width: 767px) {
+  .kontakta fieldset {
+      width: 100%; /* Gör formuläret fullbredd på små skärmar */
+  }
+
+  .kontakta input,
+  .kontakta textarea {
+      width: 100%; /* Gör input och textarea fullbredd */
+  }
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+ul.social-links { 
+  display: flex;
+  list-style: none;
+  margin:0;
+  padding: 0;
+  font-size: xx-large;
+}
+
+ul.social-links li {
+  margin-left: 20px; 
+}
+
+/* Media query för mobila enheter */
+@media only screen and (max-width: 767px) {
+  .footer {
+      flex-direction: column; /* Ändrar layouten till kolumn för bättre anpassning på små skärmar */
+  }
+
+  ul.social-links {
+      font-size: large; /* Minskar teckenstorleken för sociala länkar */
+  }
+}
+
+
+
+
+
+
